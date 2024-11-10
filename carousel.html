@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="carousel.css" />
+    <!--The defer attribute allows the script to load asynchronously and 
+    execute only after the HTML document has been fully parsed. 
+    This approach also ensures that the DOM elements are available for JavaScrip  -->
+    <!-- <script src="carousel.js" defer></script> -->
+  </head>
+  <body>
+    <div class="carousel-container">
+      <div class="btn-container">
+        <button id="prev-button" onclick="goToPrevImg()">Prev</button>
+      </div>
+      <div id="image-container" style="display: inline"></div>
+      <div class="btn-container">
+        <button id="next-button" onclick="goToNextImg()">Next</button>
+      </div>
+    </div>
+    <!-- this makes the whole dom available for js... 
+     JS will executes only after the DOM is rendered -->
+    <script src="carousel.js"></script>
+  </body>
+</html>
